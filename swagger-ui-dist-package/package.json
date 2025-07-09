@@ -1,6 +1,9 @@
 {
-  "name": "swagger-ui-dist",
+  "name": "@ra2web/swagger-ui-dist",
   "version": "$$VERSION",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "repository": "git@github.com:swagger-api/swagger-ui.git",
   "contributors": [

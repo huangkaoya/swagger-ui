@@ -4,7 +4,7 @@ window.onload = function() {
   window["SwaggerUIStandalonePreset"] = window["swagger-ui-standalone-preset"]
   // Build a system
   const ui = SwaggerUIBundle({
-    url: "https://petstore.swagger.io/v2/swagger.json",
+    url: "./swagger.yaml",
     dom_id: "#swagger-ui",
     presets: [
       SwaggerUIBundle.presets.apis,
@@ -13,7 +13,21 @@ window.onload = function() {
     plugins: [
       SwaggerUIBundle.plugins.DownloadUrl
     ],
-    // requestSnippetsEnabled: true,
+    // 显示配置
+    displayOperationId: true,          // 显示 operationId
+    showCommonExtensions: true,        // 显示扩展信息
+    showExtensions: true,              // 显示扩展
+    requestSnippetsEnabled: true,      // 启用请求代码片段
+    tryItOutEnabled: true,             // 启用 "Try it out" 功能
+    
+    // 其他有用的配置
+    deepLinking: true,                 // 启用深度链接
+    displayRequestDuration: true,      // 显示请求持续时间
+    docExpansion: "list",              // 默认展开方式：none, list, full
+    filter: true,                      // 启用操作过滤器
+    showRequestHeaders: true,          // 显示请求头
+    supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch', 'head', 'options'],
+    
     layout: "StandaloneLayout"
   })
 
