@@ -23,6 +23,15 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": "angular"
+    },
+    "@release-it/npm": {
+      "publish": true,
+      "skipChecks": true
     }
+  },
+  "npm": {
+    "versionArgs": "--no-git-tag-version",
+    "publishPath": ".",
+    "tag": "latest"
   }
 }

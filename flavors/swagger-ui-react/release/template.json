@@ -16,7 +16,7 @@
   "config": {
     "$remove": true
   },
-  "name": "swagger-ui-react",
+  "name": "@ra2web/swagger-ui-react",
   "main": "index.cjs",
   "module": "index.mjs",
   "exports": {
@@ -49,5 +49,8 @@
   "peerDependencies": {
     "react": ">=16.8.0 <19",
     "react-dom": ">=16.8.0 <19"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
